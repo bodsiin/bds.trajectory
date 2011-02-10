@@ -20,6 +20,49 @@
 		"devicewidth" : 0.0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 453.0, 537.0, 20.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 245.0, 83.0, 20.0, 20.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 355.0, 538.0, 95.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 160.0, 84.0, 85.0, 19.0 ],
+					"text" : "loop trajectory"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-13",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 481.0, 536.0, 550.0, 19.0 ],
+					"text" : "jcom.message loop @type none @range/clipmode both @repetitions/allow 1 @description \"lops trajectory\"",
+					"varname" : "parameter[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-9",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
@@ -27,7 +70,7 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 449.0, 238.0, 20.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 175.0, 81.0, 20.0, 20.0 ]
+					"presentation_rect" : [ 105.0, 83.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -41,7 +84,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 357.0, 492.0, 73.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 173.0, 62.0, 73.0, 19.0 ],
+					"presentation_rect" : [ 174.0, 62.0, 73.0, 19.0 ],
 					"text" : "refresh rate"
 				}
 
@@ -221,7 +264,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 351.0, 239.0, 95.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 80.0, 82.0, 101.0, 19.0 ],
+					"presentation_rect" : [ 10.0, 84.0, 101.0, 19.0 ],
 					"text" : "trigger trajectory"
 				}
 
@@ -372,13 +415,13 @@
 ,
 					"patching_rect" : [ 490.0, 45.0, 122.0, 24.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
 						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
+						"default_fontface" : 0,
+						"globalpatchername" : "",
+						"default_fontname" : "Verdana",
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"globalpatchername" : "",
-						"default_fontface" : 0
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p notes_&_bugs"
@@ -527,13 +570,13 @@
 ,
 									"patching_rect" : [ 225.0, 250.0, 95.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Verdana",
 										"fontname" : "Verdana",
-										"default_fontsize" : 10.0,
+										"default_fontface" : 0,
+										"globalpatchername" : "",
+										"default_fontname" : "Verdana",
 										"fontface" : 0,
 										"fontsize" : 10.0,
-										"globalpatchername" : "",
-										"default_fontface" : 0
+										"default_fontsize" : 10.0
 									}
 ,
 									"text" : "p openReference"
@@ -674,13 +717,13 @@
 ,
 									"patching_rect" : [ 225.0, 225.0, 95.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Verdana",
 										"fontname" : "Verdana",
-										"default_fontsize" : 10.0,
+										"default_fontface" : 0,
+										"globalpatchername" : "",
+										"default_fontname" : "Verdana",
 										"fontface" : 0,
 										"fontsize" : 10.0,
-										"globalpatchername" : "",
-										"default_fontface" : 0
+										"default_fontsize" : 10.0
 									}
 ,
 									"text" : "p openReference"
@@ -810,13 +853,13 @@
 ,
 					"patching_rect" : [ 490.0, 15.0, 271.0, 24.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
 						"fontname" : "Verdana",
-						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"globalpatchername" : "",
+						"default_fontname" : "Verdana",
 						"fontface" : 0,
 						"fontsize" : 12.0,
-						"globalpatchername" : "",
-						"default_fontface" : 0
+						"default_fontsize" : 12.0
 					}
 ,
 					"text" : "p read_me_for_programming_details"
@@ -1094,13 +1137,13 @@
 ,
 									"patching_rect" : [ 30.0, 280.0, 42.0, 19.0 ],
 									"saved_object_attributes" : 									{
-										"default_fontname" : "Verdana",
 										"fontname" : "Verdana",
-										"default_fontsize" : 10.0,
+										"default_fontface" : 0,
+										"globalpatchername" : "",
+										"default_fontname" : "Verdana",
 										"fontface" : 0,
 										"fontsize" : 10.0,
-										"globalpatchername" : "",
-										"default_fontface" : 0
+										"default_fontsize" : 10.0
 									}
 ,
 									"text" : "p front"
@@ -1262,13 +1305,13 @@
 ,
 					"patching_rect" : [ 157.0, 591.0, 50.0, 19.0 ],
 					"saved_object_attributes" : 					{
-						"default_fontname" : "Verdana",
 						"fontname" : "Verdana",
-						"default_fontsize" : 10.0,
+						"default_fontface" : 0,
+						"globalpatchername" : "",
+						"default_fontname" : "Verdana",
 						"fontface" : 0,
 						"fontsize" : 10.0,
-						"globalpatchername" : "",
-						"default_fontface" : 0
+						"default_fontsize" : 10.0
 					}
 ,
 					"text" : "p panel"
@@ -1351,7 +1394,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 232.0, 577.0, 220.0, 17.0 ],
-					"text" : "/start"
+					"text" : "/view/size 300 70"
 				}
 
 			}
@@ -1517,6 +1560,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"hidden" : 0,
 					"midpoints" : [  ],
@@ -1602,6 +1654,15 @@
 					"hidden" : 0,
 					"midpoints" : [  ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-13", 0 ],
+					"hidden" : 0,
+					"midpoints" : [  ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
